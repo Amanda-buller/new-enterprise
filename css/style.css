@@ -1,29 +1,83 @@
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  height: 100px;
+  margin-bottom: 10px;
+}
+.button-with-horse {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.horse-img {
+  position: absolute;
+  bottom: 200%; /* Moves image above the button */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* centers it + adjusts spacing */
+  width: 30px; /* adjust size as needed */
+}
+
+
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f3f3ed;
-    color: #333;
-  }
-  
-  header {
-    background: #3a5d39;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  section {
-    padding: 2rem;
-  }
-  
-  h2 {
-    color: #3a5d39;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #ddd;
-  }
+  margin: 0;
+  font-family: sans-serif;
+  padding: 0;
+}
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+#features h2 {
+  text-align: center;
+}
+
+#features ul {
+  text-align: left;
+  max-width: 500px;
+  margin-top: 20px;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+
+section {
+  text-align: center;
+  padding: 40px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #3a9d23;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2e7e1c;
+}
+
+
   
