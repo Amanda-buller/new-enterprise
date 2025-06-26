@@ -1,47 +1,50 @@
-.top-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
+/* ----------- Responsive Styles ----------- */
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .top-section {
+    margin-top: 10px;
+  }
+
+  .logo {
+    height: 60px;
+    margin-bottom: 5px;
+  }
+
+  .button-with-horse {
+    margin-top: 15px;
+  }
+
+  .horse-img {
+    width: 20px; /* smaller horse image on small screens */
+    transform: translateX(-50%) translateY(5px);
+  }
+
+  #features {
+    padding: 20px 10px;
+  }
+
+  #features ul {
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
 }
 
-.logo {
-  height: 100px;
-  margin-bottom: 10px;
-}
-.button-with-horse {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.horse-img {
-  position: absolute;
-  bottom: 200%; /* Moves image above the button */
-  left: 50%;
-  transform: translateX(-50%) translateY(10px); /* centers it + adjusts spacing */
-  width: 30px; /* adjust size as needed */
-}
-
-
-
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  padding: 0;
-}
-#features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-}
-
-#features h2 {
-  text-align: center;
-}
 
 #features ul {
   text-align: left;
@@ -50,13 +53,10 @@ body {
   padding-left: 20px;
   line-height: 1.8;
 }
-
-
 section {
   text-align: center;
   padding: 40px;
 }
-
 .download-buttons {
   display: flex;
   justify-content: center;
@@ -64,7 +64,6 @@ section {
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
 .button {
   background-color: #3a9d23;
   color: white;
@@ -72,7 +71,7 @@ section {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  
 }
 
 .button:hover {
