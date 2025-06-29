@@ -3,6 +3,10 @@
 @media (max-width: 768px) {
   body {
     padding: 10px;
+    html {
+      scroll-behavior: smooth;
+    }
+     
   }
 
   .top-section {
@@ -26,9 +30,26 @@
     margin-top: 20px;
     flex-wrap: wrap;
   }
- 
-  
 
+  .scroll-down {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #3a9d23;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+    transition: color 0.3s ease;
+  }
+  
+  .scroll-down:hover {
+    color: #2e7e1c;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+  
   #features {
     padding: 20px 10px;
   }
@@ -93,6 +114,25 @@ section {
     text-align: center;
     margin: 0 auto;
   }
+}
+.hero {
+  background-image: url('../assets/horse.png'); /* or use any full-size image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* optional overlay for readability */
+  padding: 40px;
+  border-radius: 10px;
 }
 
 
