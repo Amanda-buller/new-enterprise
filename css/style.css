@@ -1,4 +1,4 @@
-/* ----------- Responsive Styles ----------- */
+
 
 @media (max-width: 768px) {
   body {
@@ -18,7 +18,7 @@
     margin-bottom: 5px;
   }
 
-  .button-with-horse {
+  .button {
     margin-top: 15px;
   }
 
@@ -73,11 +73,18 @@
 }
 
 
-#features ul {
-  padding-left: 10px;
-  margin-top: 10px;
-  max-width: 100%;
+ul {
+  list-style: disc inside;
+  padding-left: 1rem; 
 }
+
+li {
+  display: list-item;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+
 section {
   text-align: center;
   padding: 40px;
@@ -116,7 +123,7 @@ section {
   }
 }
 .hero {
-  background-image: url('../assets/horse.png'); /* or use any full-size image */
+  background-image: url('../assets/jumping.jpeg'); /* or use any full-size image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,7 +137,7 @@ section {
 }
 
 .hero-content {
-  background-color: rgba(0, 0, 0, 0.5); /* optional overlay for readability */
+  background-color: rgba(0, 0, 0, 0.5); /
   padding: 40px;
   border-radius: 10px;
 }
