@@ -71,6 +71,9 @@
     line-height: 1.5;
   }
 }
+ul li::marker {
+  color: #068837; /* your LamiCare green */
+}
 
 
 ul {
